@@ -16,7 +16,7 @@ method.pc1 <- function(input, args){
 }
 
 
-method.dufouret.rho <- function(input, args){
+method.duforet.rho <- function(input, args){
     i <- args[['index']] 
     x <- input$svd
     output <- list()
@@ -24,15 +24,15 @@ method.dufouret.rho <- function(input, args){
     output$rank <- rank(-output$score)
     return(output)
 }
-method.dufouret.rho1 <- function(input, args){
+method.duforet.rho1 <- function(input, args){
     args[['index']] <- 1
-    method.dufouret.rho(input, args)
+    method.duforet.rho(input, args)
 }
-method.dufouret.rho2 <- function(input, args){
+method.duforet.rho2 <- function(input, args){
     args[['index']] <- 2
-    method.dufouret.rho(input, args)
+    method.duforet.rho(input, args)
 }
-method.dufouret.h <- function(input, args){
+method.duforet.h <- function(input, args){
     k <- args$K
     x <- input$svd
     output <- list()
@@ -40,7 +40,7 @@ method.dufouret.h <- function(input, args){
     output$rank <- rank(-output$score)
     return(output)
 }
-method.dufouret.hprime <- function(input, args){
+method.duforet.hprime <- function(input, args){
     k <- args$K
     x <- input$svd
     output <- list()
