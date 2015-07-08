@@ -59,15 +59,15 @@ addScenarioGroup(dsc_pcasel, name="selcos",
                  flexible.args=flexargs)
 
 addMethod(dsc_pcasel, name="df.rho1", 
-          fn=method.dufouret.rho1)
+          fn=method.duforet.rho1)
 addMethod(dsc_pcasel, name="df.rho2",
-          fn=method.dufouret.rho2)
+          fn=method.duforet.rho2)
 addMethod(dsc_pcasel, name="df.h", 
-          fn=method.dufouret.h,
+          fn=method.duforet.h,
           args=list(K=2))
 addMethod(dsc_pcasel, name="df.hprime",
           args=list(K=2),
-          fn=method.dufouret.hprime)
+          fn=method.duforet.hprime)
 
 addMethod(dsc_pcasel, name="lfa3",
           args=list(K=3),
