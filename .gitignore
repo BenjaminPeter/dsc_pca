@@ -1,3 +1,10 @@
 .dscr
 dsc_pcasel
 *Rcheck
+*png
+.RData
+.Rhistory
+*swo
+*swp
+*pdf
+dscr/
